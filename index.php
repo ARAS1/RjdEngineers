@@ -36,7 +36,7 @@
     <div 
      class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890
     <input type="button" value="Register" name="RegisterBtn" style="float: right;">
-    <input type="button" value="Login" name="LoginBtn" style="float: right;">
+    <input type="button" value="Login" name="LoginBtn" style="float: right; margin: 10px;background-color: aquamarine;">
     </div>
 
     <!-- Navigation -->
