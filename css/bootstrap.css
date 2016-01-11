@@ -115,7 +115,7 @@ select,
 textarea {
   margin: 0;
   font: inherit;
-  color: #449d44;
+  color: inherit;
 }
 button {
   overflow: visible;
