@@ -179,7 +179,7 @@ footer p {
     .navbar-nav>li>a:hover {
         line-height: normal;
         text-decoration: none;
-        color: #197ec7;
+        color: rgba(172, 34, 34, 0.86);
     }
 
     .navbar-nav {
@@ -227,6 +227,7 @@ footer p {
     font-size: 20px;
     float: right;
     margin: 5px;
+    margin-left: 15px;
     padding-left: 4px;
     padding-right: 4px;
     border: none;
@@ -234,18 +235,24 @@ footer p {
     outline: none;
     color: aliceblue;
     background-color: #535353;
+    text-decoration: none;
 }
 
 .registerBtn:hover{
     border: none;
     background-color: #afafaf;
     outline: none;
+    color: #197ec7;
+    text-decoration: none;
+    color: rgba(172, 34, 34, 0.86);
+    font-weight: 600;
 }
 
 .registerBtn:active{
     border: none;
     background-color: #afafaf;
     outline: none;
+    text-decoration: none;
 }
 
 .loginBtn {
@@ -259,18 +266,23 @@ footer p {
     outline: none;
     color: aliceblue;
     background-color: #535353;
+    text-decoration: none;
 }
 
 .loginBtn:hover{
     border: none;
     background-color: #afafaf;
     outline: none;
+    color: rgba(172, 34, 34, 0.86);
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .loginBtn:active{
     border: none;
     background-color: #afafaf;
     outline: none;
+    text-decoration: none;
 }
 
 .title{
