@@ -256,6 +256,8 @@ footer p {
     background-color: #afafaf;
     outline: none;
     text-decoration: none;
+    color: rgba(172, 34, 34, 0.86);
+    font-weight: 600;      
 }
 
 .loginBtn {
@@ -286,6 +288,8 @@ footer p {
     background-color: #afafaf;
     outline: none;
     text-decoration: none;
+    color: rgba(172, 34, 34, 0.86);
+    font-weight: 600;   
 }
 
 .menuLinks {
@@ -338,4 +342,13 @@ input {
     border: none;
     background-color: rgba(147, 147, 147, 0.87)
 }
+
+.LeftContainer{
+    
+}
+
+.registerLeftContainer{
+    
+}
+
 
