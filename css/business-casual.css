@@ -328,6 +328,7 @@ ul {list-style-type: none;}
 
 label{
     margin-top: 8px;
+    margin-right: 8px;
     display: inline-block;
     float: left;
     clear: left;
