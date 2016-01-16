@@ -1,8 +1,8 @@
 <?php
-if ($_SERVER['submitBtn'] == 'POST'){
+if (isset($_POST['submitBtn'])){
     
 $model = new Account();  
-$model -> firstName = $_POST['firstNameFd'];
+$model ->firstName = $_POST['firstNameFd'];
 $model ->lastName = $_POST['lastNameFd'];
 $model ->userName = $_POST['userNameFd'];
 $model ->emailAddress = $_POST['emailAddressFd'];
