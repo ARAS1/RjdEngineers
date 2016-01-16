@@ -51,6 +51,8 @@ hr {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 3px;
+    padding-top: 10px;
+    
 }
 
 .img-full {
@@ -114,8 +116,8 @@ footer p {
 
 @media screen and (min-width:768px) {
     .brand {
+        margin-top: 35px;
         display: inherit;
-        margin: 0;
         padding: 30px 0 10px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
@@ -173,6 +175,12 @@ footer p {
     .navbar-nav>li>a {
         line-height: normal;
     }
+    
+    .navbar-nav>li>a:hover {
+        line-height: normal;
+        text-decoration: none;
+        color: #197ec7;
+    }
 
     .navbar-nav {
         display: table;
@@ -180,7 +188,9 @@ footer p {
         margin: 0 auto;
         table-layout: fixed;
         font-size: 1.25em;
+        font-weight: 600;
     }
+    
 }
 
 @media screen and (min-width:1200px) {
@@ -193,13 +203,24 @@ footer p {
 
 /**************************** OUR CUSTOM CSS RULES ****************************/
 .topBar{
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.77);
     position: fixed;
     width: 100%;
     height: 40px;
     top: 0px;
     z-index: 2;
     
+}
+
+.submitBtn{
+    font-size: 20px;
+    margin: 5px;
+    margin-bottom: 2px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
 }
 
 .registerBtn {
@@ -211,6 +232,8 @@ footer p {
     border: none;
     border-radius: 12px;
     outline: none;
+    color: aliceblue;
+    background-color: #535353;
 }
 
 .registerBtn:hover{
@@ -234,6 +257,8 @@ footer p {
     border: none;
     border-radius: 12px;
     outline: none;
+    color: aliceblue;
+    background-color: #535353;
 }
 
 .loginBtn:hover{
@@ -262,6 +287,20 @@ footer p {
 }
 
 .form {
+    position: absolute;
+    top: 200px;
     color: #fff;
     font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    align-content: center;
 }
+
+.menuLinks {
+    z-index: 2;
+    color: rgb(62, 62, 62);
+    font: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
+    
+}
+
+ul {list-style-type: none;}
