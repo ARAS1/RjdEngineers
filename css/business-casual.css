@@ -304,3 +304,20 @@ footer p {
 }
 
 ul {list-style-type: none;}
+
+label{
+    margin-top: 8px;
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+
+input {
+    margin-top: 8px;
+    display: inline-block;
+    float: left;
+    border: none;
+    background-color: rgba(147, 147, 147, 0.87)
+}
