@@ -1,27 +1,28 @@
 <?php
-include '../model/Account.php';
-include '../register.html';
-
-if ($_POST['submitBtn'] == 'Submit'){
-  $model = new Account();  
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+    
+$model = new Account();  
 $model -> firstName = $_POST['firstNameFd'];
-$$model ->lastName = $_POST['lastNameFd'];
-$$model ->userName = $_POST['userNameFd'];
-$$model ->emailAddress = $_POST['emailAddressFd'];
-$$model ->addressLine1 = $_POST['addressLine1Fd'];
-$$model ->addressLine2 = $_POST['addressLine2Fd'];
-$$model ->cityTown = $_POST['cityTownFd'];
-$$model ->country = $_POST['countryFd'];
-$$model ->postCode = $_POST['postCodeFd'];
-$$model ->password = $_POST['passwordFd'];
-$$model ->confirmPassword = $_POST['confirmPasswordFd'];
-
-print $userName;
-echo $lastName;
-echo $userName;
+$model ->lastName = $_POST['lastNameFd'];
+$model ->userName = $_POST['userNameFd'];
+$model ->emailAddress = $_POST['emailAddressFd'];
+$model ->addressLine1 = $_POST['addressLine1Fd'];
+$model ->addressLine2 = $_POST['addressLine2Fd'];
+$model ->cityTown = $_POST['cityTownFd'];
+$model ->country = $_POST['countryFd'];
+$model ->postCode = $_POST['postCodeFd'];
+$model ->password = $_POST['passwordFd'];
+$model ->confirmPassword = $_POST['confirmPasswordFd'];
 
 }
-
-print $userName;
-echo $lastName;
 ?>
+
+<!DOCTYPE html>
+<head></head>
+<body>
+    <?php echo $modelfirstName;?></br>
+    <?php echo $model;?></br>
+    <?php var_dump($model);?></br>
+    <?php echo $firstName;?></br>
+    
+</body>
