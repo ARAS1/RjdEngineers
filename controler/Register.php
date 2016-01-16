@@ -1,20 +1,20 @@
 <?php
-
+include '../model/Account.php';
 include '../register.html';
 
 if ($_POST['/controler/Register.php'] == 'Submit'){
-    
-$firstName = $_POST['firstNameFd'];
-$lastName = $_POST['lastNameFd'];
-$userName = $_POST['userNameFd'];
-$emailAddress = $_POST['emailAddressFd'];
-$addressLine1 = $_POST['addressLine1Fd'];
-$addressLine2 = $_POST['addressLine2Fd'];
-$cityTown = $_POST['cityTownFd'];
-$country = $_POST['countryFd'];
-$postCode = $_POST['postCodeFd'];
-$password = $_POST['passwordFd'];
-$confirmPassword = $_POST['confirmPasswordFd'];
+  $model = new Account();  
+$model -> firstName = $_POST['firstNameFd'];
+$$model ->lastName = $_POST['lastNameFd'];
+$$model ->userName = $_POST['userNameFd'];
+$$model ->emailAddress = $_POST['emailAddressFd'];
+$$model ->addressLine1 = $_POST['addressLine1Fd'];
+$$model ->addressLine2 = $_POST['addressLine2Fd'];
+$$model ->cityTown = $_POST['cityTownFd'];
+$$model ->country = $_POST['countryFd'];
+$$model ->postCode = $_POST['postCodeFd'];
+$$model ->password = $_POST['passwordFd'];
+$$model ->confirmPassword = $_POST['confirmPasswordFd'];
 
 print $userName;
 echo $lastName;
@@ -24,4 +24,6 @@ echo $userName;
 
 print $userName;
 echo $lastName;
+
+include '../index.html';
 ?>
