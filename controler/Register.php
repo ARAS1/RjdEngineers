@@ -2,7 +2,7 @@
 include '../model/Account.php';
 if ($_SERVER['submitBtn'] == 'POST'){   
 $model = new Account();  
-$model ->firstName = 'Something';
+$model ->firstName = $_POST['firstNameFd'];
 $model ->lastName = $_POST['lastNameFd'];
 $model ->userName = $_POST['userNameFd'];
 $model ->emailAddress = $_POST['emailAddressFd'];
