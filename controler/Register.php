@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['submitBtn'])){
+if ($_SERVER['submitBtn'] == 'POST'){
     
 $model = new Account();  
 $model ->firstName = $_POST['firstNameFd'];
