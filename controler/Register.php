@@ -16,9 +16,12 @@ $postCode = $_POST['postCodeFd'];
 $password = $_POST['passwordFd'];
 $confirmPassword = $_POST['confirmPasswordFd'];
 
-echo $userName;
+print $userName;
 echo $lastName;
 echo $userName;
 
 }
+
+print $userName;
+echo $lastName;
 ?>
