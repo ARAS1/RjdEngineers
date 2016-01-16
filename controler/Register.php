@@ -1,6 +1,6 @@
 <?php
 
-include 'register.html';
+include '../register.html';
 
 if ($_POST['/controler/Register.php'] == 'Submit'){
     
