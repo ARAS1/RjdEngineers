@@ -2,7 +2,7 @@
 include '../model/Account.php';
 include '../register.html';
 
-if ($_POST['/controler/Register.php'] == 'Submit'){
+if ($_POST['submitBtn'] == 'Submit'){
   $model = new Account();  
 $model -> firstName = $_POST['firstNameFd'];
 $$model ->lastName = $_POST['lastNameFd'];
@@ -24,6 +24,4 @@ echo $userName;
 
 print $userName;
 echo $lastName;
-
-include '../index.html';
 ?>
