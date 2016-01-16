@@ -2,7 +2,7 @@
 
 include 'register.html';
 
-if (isset($_POST['Submit'])){
+if ($_POST['/controler/Register.php'] == 'Submit'){
     
 $firstName = $_POST['firstNameFd'];
 $lastName = $_POST['lastNameFd'];
