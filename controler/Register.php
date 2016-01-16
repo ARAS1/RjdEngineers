@@ -1,6 +1,6 @@
 <?php
-if ($_SERVER['submitBtn'] == 'POST'){
-    
+include '../model/Account.php';
+if ($_SERVER['submitBtn'] == 'POST'){   
 $model = new Account();  
 $model ->firstName = $_POST['firstNameFd'];
 $model ->lastName = $_POST['lastNameFd'];
@@ -13,7 +13,6 @@ $model ->country = $_POST['countryFd'];
 $model ->postCode = $_POST['postCodeFd'];
 $model ->password = $_POST['passwordFd'];
 $model ->confirmPassword = $_POST['confirmPasswordFd'];
-
 }
 ?>
 
