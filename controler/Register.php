@@ -41,7 +41,7 @@ mysqli_query($db, $sql);
 mysqli_close($db);
 
 
-
+/*
  echo $model->firstName;
  echo $model->lastName;
  echo $model->userName;
@@ -51,6 +51,5 @@ mysqli_close($db);
  echo $model->cityTown;
  echo $model->country;
  echo $model->postCode;
- echo $model->password;
- echo $model->confirmPassword;
+ echo $model->password;*/
 ?>
