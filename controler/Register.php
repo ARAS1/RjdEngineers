@@ -15,8 +15,8 @@ $model->password = htmlspecialchars($_POST['passwordFd']);
 $model->confirmPassword = htmlspecialchars($_POST['confirmPasswordFd']);
 }
 
-$CreationDate = DateTime::getTimestamp;
-$LastLogin = DateTime::getTimestamp;
+$CreationDate = new DateTime('now');
+$LastLogin = new DateTime('now');
 $IsActive =0;
 $passwordHash = password_hash($model->password, PASSWORD_DEFAULT);
 $db = mysqli_connect('192.168.1.64', 'CoffeeAppUser', 'TyUEMqZncSdj6n4K', 'Coffee&Chocolate');
