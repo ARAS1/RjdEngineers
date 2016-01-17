@@ -18,7 +18,6 @@ $confirmPassword = htmlspecialchars($_POST['confirmPasswordFd']);
 $CreationDate = new DateTime('now');
 $LastLogin = new DateTime('now');
 $IsActive =0;
-$passwordHash = password_hash($model->password, PASSWORD_DEFAULT);
 $db = mysqli_connect('192.168.1.64', 'CoffeeAppUser', 'TyUEMqZncSdj6n4K', 'Coffee&Chocolate');
 $sql = sprintf("INSERT INTO Account (First_Name, Last_Name, User_Name, Email_Address, Address_Line1, Address_Line2, 
     City_Town, Country, Country_Code, Post_Code, Password_Hash, Is_Active, Creation_Date, Last_Login) VALUES (
@@ -32,7 +31,7 @@ $sql = sprintf("INSERT INTO Account (First_Name, Last_Name, User_Name, Email_Add
             mysqli_real_escape_string($db, $model->cityTown),
             mysqli_real_escape_string($db, $model->country),
             mysqli_real_escape_string($db, $model->postCode),
-            mysqli_real_escape_string($db, $passwordHash),
+            mysqli_real_escape_string($db, $password),
             mysqli_real_escape_string($db, $IsActive),
             mysqli_real_escape_string($db, $CreationDate),
             mysqli_real_escape_string($db, $LastLogin));
