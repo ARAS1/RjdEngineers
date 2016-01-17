@@ -53,5 +53,4 @@ mysqli_close($db);
  echo $model->postCode;
  echo $model->password;
  echo $model->confirmPassword;
- echo $passwordHash;
 ?>
