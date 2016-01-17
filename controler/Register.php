@@ -18,7 +18,7 @@ $confirmPassword = htmlspecialchars($_POST['confirmPasswordFd']);
 $CreationDate = new DateTime('now');
 $LastLogin = new DateTime('now');
 $IsActive =0;
-$db = mysqli_connect('192.168.1.64', 'CoffeeAppUser', 'TyUEMqZncSdj6n4K', 'Coffee&Chocolate');
+$db = mysqli_connect('127.0.0.1', 'CoffeeAppUser', 'TyUEMqZncSdj6n4K', 'Coffee&Chocolate');
 $sql = sprintf("INSERT INTO Account (First_Name, Last_Name, User_Name, Email_Address, Address_Line1, Address_Line2, 
     City_Town, Country, Country_Code, Post_Code, Password_Hash, Is_Active, Creation_Date, Last_Login) VALUES (
  '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')",
