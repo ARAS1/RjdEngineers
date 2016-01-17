@@ -1,6 +1,6 @@
 <?php
 include '../model/Account.php';
-if (isset($_POST['Submit1'])){   
+if (isset($_POST['submitBtn'])){   
 $model = new Account();  
 $name = $_POST['firstNameFd'];
 $model->lastName = $_POST['lastNameFd'];
