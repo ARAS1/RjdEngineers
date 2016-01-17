@@ -2,7 +2,7 @@
 include '../model/Account.php';
 if (isset($_POST['Submit1'])){   
 $model = new Account();  
-$model->firstName = $_POST['firstNameFd'];
+$name = $_POST['firstNameFd'];
 $model->lastName = $_POST['lastNameFd'];
 $model->userName = $_POST['userNameFd'];
 $model->emailAddress = $_POST['emailAddressFd'];
@@ -21,5 +21,6 @@ $model->confirmPassword = $_POST['confirmPasswordFd'];
 <body>
 <?php echo "<p>$model->firstName </p>"?>
 <?php echo "<p>$model->firstName </p>"?>
+<?php echo "<p>$name </p>"?>
 <?php echo "<p> Output some stuff</p>"?>
 </body>
