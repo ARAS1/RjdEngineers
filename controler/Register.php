@@ -14,20 +14,7 @@ $model->postCode = $_POST['postCodeFd'];
 $model->password = $_POST['passwordFd'];
 $model->confirmPassword = $_POST['confirmPasswordFd'];
 }
- echo $firstName;
- echo $lastName;
- echo $userName;
- echo $emailAddress;
- echo $addressLine1;
- echo $addressLine2;
- echo $cityTown;
- echo $country;
- echo $postCode;
- echo $password;
- echo $confirmPassword;
- 
- echo "---------model output---------";
- 
+
  echo $model->firstName;
  echo $model->lastName;
  echo $model->userName;
@@ -39,6 +26,5 @@ $model->confirmPassword = $_POST['confirmPasswordFd'];
  echo $model->postCode;
  echo $model->password;
  echo $model->confirmPassword;
- 
- 
+  
 ?>
