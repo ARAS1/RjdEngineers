@@ -5,7 +5,7 @@ $model = new Account();
 $model->firstName = htmlspecialchars($_POST['firstNameFd']);
 $model->lastName = htmlspecialchars($_POST['lastNameFd']);
 $model->userName = htmlspecialchars($_POST['userNameFd']);
-$model->emailAddress = htmlspecialchars($_POST['emailAddressFd']);
+$model->emailAddress = htmlspecialchars($_POST['emailFd']);
 $model->addressLine1 = htmlspecialchars($_POST['addressLine1Fd']);
 $model->addressLine2 = htmlspecialchars($_POST['addressLine2Fd']);
 $model->cityTown = htmlspecialchars($_POST['cityTownFd']);
@@ -17,6 +17,7 @@ $confirmPassword = htmlspecialchars($_POST['confirmPasswordFd']);
 
 $CreationDate = new DateTime('now');
 $LastLogin = new DateTime('now');
+
 $IsActive =0;
 $db = mysqli_connect('127.0.0.1', 'CoffeeAppUser', 'TyUEMqZncSdj6n4K', 'Coffee&Chocolate');
 $sql = sprintf("INSERT INTO Account (First_Name, Last_Name, User_Name, Email_Address, Address_Line1, Address_Line2, 
@@ -33,8 +34,8 @@ $sql = sprintf("INSERT INTO Account (First_Name, Last_Name, User_Name, Email_Add
             mysqli_real_escape_string($db, $model->postCode),
             mysqli_real_escape_string($db, $password),
             mysqli_real_escape_string($db, $IsActive),
-            mysqli_real_escape_string($db, $CreationDate),
-            mysqli_real_escape_string($db, $LastLogin));
+            "GETDATE()",
+            "GETDATE()");
 
 mysqli_query($db, $sql);
 mysqli_close($db);
