@@ -14,6 +14,10 @@ $model->postCode = $_POST['postCodeFd'];
 $model->password = $_POST['passwordFd'];
 $model->confirmPassword = $_POST['confirmPasswordFd'];
 }
+ echo "<p>$firstName </p>";
+ echo "<p>$model->firstName </p>";
+ echo "<p>$name </p>";
+ echo "<p> Output some stuff 1 </p>";
 ?>
 
 <!DOCTYPE html>
@@ -22,5 +26,5 @@ $model->confirmPassword = $_POST['confirmPasswordFd'];
 <?php echo "<p>$model->firstName </p>"?>
 <?php echo "<p>$model->firstName </p>"?>
 <?php echo "<p>$name </p>"?>
-<?php echo "<p> Output some stuff</p>"?>
+<?php echo "<p> Output some stuff 2</p>"?>
 </body>
