@@ -9,7 +9,6 @@ class Account {
  var $addressLine1;
  var $addressLine2;
  var $cityTown;
- var $Country;
- var $passwordHash;
-    
+ var $country;
+ var $postCode;   
 }

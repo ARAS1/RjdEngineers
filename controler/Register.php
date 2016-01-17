@@ -11,8 +11,8 @@ $model->addressLine2 = htmlspecialchars($_POST['addressLine2Fd']);
 $model->cityTown = htmlspecialchars($_POST['cityTownFd']);
 $model->country = htmlspecialchars($_POST['countryFd']);
 $model->postCode = htmlspecialchars($_POST['postCodeFd']);
-$model->password = htmlspecialchars($_POST['passwordFd']);
-$model->confirmPassword = htmlspecialchars($_POST['confirmPasswordFd']);
+$password = htmlspecialchars($_POST['passwordFd']);
+$confirmPassword = htmlspecialchars($_POST['confirmPasswordFd']);
 }
 
 $CreationDate = new DateTime('now');
