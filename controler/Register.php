@@ -31,6 +31,7 @@ $sql = sprintf("INSERT INTO Account (First_Name, Last_Name, User_Name, Email_Add
             mysqli_real_escape_string($db, $model->addressLine2),
             mysqli_real_escape_string($db, $model->cityTown),
             mysqli_real_escape_string($db, $model->country),
+            "GBP",
             mysqli_real_escape_string($db, $model->postCode),
             mysqli_real_escape_string($db, $password),
             mysqli_real_escape_string($db, $IsActive),
